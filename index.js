@@ -51,13 +51,13 @@ function displayTask(task) {
     li.dataset.id = task.id;
 
     const title = document.createElement('span');
-    title.textContent = 'Title: ${task.title}';
+    title.textContent = `Title: ${task.title}`;
 
     const desc = document.createElement('span');
-    desc.textContent = 'Description: ${task.description}';
+    desc.textContent = `Description: ${task.description}`;
 
     const date = document.createElement('span');
-    date.textContent = 'Due Date: ${task.dueDate}';
+    date.textContent = `Due Date: ${task.dueDate}`;
 
     const actions = document.createElement('div');
     actions.className = 'task-actions';
